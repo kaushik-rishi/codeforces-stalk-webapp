@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stalking User ...</title>
+  <script src="scripts/jq.js"></script>
+  <script src="scripts/stalking.js"></script>
+  <link rel="stylesheet" href="styles/stalking_styles.css">
+</head>
+<body>
+  <div class="currently-stalking hide">
+    Currently Stalking <span id="handle"></span>
+  </div>
+
+  <div class="previous-state hide">
+    <span>Most recent submission and the verdict : </span>
+    <span id="problem-id"></span>
+    <span id="verdict"></span>
+  </div>
+  
+  <div class="updates">
+    Update: 
+    <span id="update-msg"></span>
+    <br>
+    <span class="small">Any new updates will be shown here! They will clear after 10 seconds</span>
+  </div>
+
+  <img src="assets/loading.gif" width="600px" class="hide" id="loading-gif">
+  <div class="errors-development hide">
+    errors
+  </div>
+</body>
+</html>
